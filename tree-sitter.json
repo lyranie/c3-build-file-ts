@@ -1,0 +1,41 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "c3_build_file",
+      "camelcase": "C3BuildFile",
+      "title": "C3BuildFile",
+      "scope": "source.c3bf",
+      "file-types": [
+        "C3BuildFile"
+      ],
+      "exact-filenames": [
+        "C3BuildFile"
+      ],
+      "injection-regex": "^C3BuildFile$",
+      "class-name": "TreeSitterTsC3BuildFile"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "C3BuildFile grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Kiana Bennett"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/tree-sitter/tree-sitter-ts_c3_build_file"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
