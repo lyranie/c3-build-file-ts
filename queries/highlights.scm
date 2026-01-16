@@ -41,3 +41,7 @@
 (STRING) @string
 
 (COMMENT) @comment
+
+(var
+  (IDENT) @comment
+  "=" @operator)

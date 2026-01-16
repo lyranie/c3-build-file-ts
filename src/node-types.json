@@ -361,6 +361,10 @@
         {
           "type": "task",
           "named": true
+        },
+        {
+          "type": "var",
+          "named": true
         }
       ]
     }
@@ -379,6 +383,25 @@
         },
         {
           "type": "statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "var",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "IDENT",
+          "named": true
+        },
+        {
+          "type": "STRING",
           "named": true
         }
       ]
@@ -409,6 +432,10 @@
   },
   {
     "type": ")",
+    "named": false
+  },
+  {
+    "type": "=",
     "named": false
   },
   {

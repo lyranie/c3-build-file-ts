@@ -21,6 +21,7 @@ module.exports = grammar({
       $.print,
       $.remove,
       $.add,
+      $.var,
       $.COMMENT
     ),
     compiler: $ => seq(
@@ -145,6 +146,11 @@ module.exports = grammar({
       repeat1($.STRING),
       ")"
     ),
+    var: $ => seq(
+      $.IDENT,
+      "=",
+      $.STRING
+    ),
     _version_spec: $ => choice(
       $.exact_version,
       $.min_version,
@@ -177,7 +183,7 @@ module.exports = grammar({
     ),
     STRING_CONTENT: $ => /[^\"\\]+/,
     ESCAPE_SEQUENCE: $ => /\\[\\\"'nrtbfv]/,
-    IDENT: $ => /[a-zA-Z][a-zA-Z_]*/,
+    IDENT: $ => /[a-zA-Z][a-zA-Z_0-9]*/,
     COMMENT: $ => /--[^\n]*/
   }
 });
