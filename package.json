@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-ts-c3-build-file",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "TsC3BuildFile grammar for tree-sitter",
   "repository": "https://github.com/tree-sitter/tree-sitter-ts_c3_build_file",
   "license": "MIT",
