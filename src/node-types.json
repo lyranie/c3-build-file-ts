@@ -242,6 +242,10 @@
           "named": true
         },
         {
+          "type": "STRING",
+          "named": true
+        },
+        {
           "type": "exact_version",
           "named": true
         }
@@ -436,6 +440,10 @@
   },
   {
     "type": "=",
+    "named": false
+  },
+  {
+    "type": "AUTHOR",
     "named": false
   },
   {

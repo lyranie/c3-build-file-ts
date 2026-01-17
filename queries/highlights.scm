@@ -14,6 +14,7 @@
  "LINK"
  "DIR"
  "FILE"
+ "AUTHOR"
 ] @parameter
 
 [

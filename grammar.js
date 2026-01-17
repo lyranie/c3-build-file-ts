@@ -35,9 +35,23 @@ module.exports = grammar({
       "project",
       "(",
       $.IDENT,
-      optional(seq(
-        "VERSION",
-        $.exact_version
+      optional(choice(
+        seq(
+          "VERSION",
+          $.exact_version,
+          optional(seq(
+            "AUTHOR",
+            $.STRING
+          ))
+        ),
+        seq(
+          "AUTHOR",
+          $.STRING,
+          optional(seq(
+            "VERSION",
+            $.exact_version
+          ))
+        )
       )),
       ")"
     ),
